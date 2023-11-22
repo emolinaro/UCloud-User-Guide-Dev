@@ -1,0 +1,74 @@
+#!/usr/bin/env python3
+# generate badges used in the apps documentation
+# source: https://github.com/nikita-skobov/local-badges
+import glob
+import os
+import subprocess
+import sys
+
+# Generate badges to /docs/Apps/badges
+p = subprocess.Popen(
+    "local-badges --config app_badges.js", stdout=subprocess.PIPE, shell=True
+)
+p.communicate()
+
+# Find badges in README.md files and make symlinks to badges in /Apps/{APP_NAME}/doc/badges
+doc_folders = glob.glob("../Apps/*/doc")
+unique_badges_destination = {}
+for doc_folder in doc_folders:
+    if not os.path.exists(f"{doc_folder}/README.md"):
+        print(f"No README.md file in {doc_folder}")
+        sys.exit()
+    if not os.path.exists(f"{doc_folder}/badges"):
+        print(f"No badges folder in {doc_folder}")
+        sys.exit()
+
+    # Find badges in README.md file
+    with open(f"{doc_folder}/README.md", encoding="utf8") as file:
+        lines = file.read()
+    badges = []
+    lines_tmp = lines.split("badges/")
+    for line_tmp in lines_tmp:
+        for line in line_tmp.split(")"):
+            if ".svg" in line:
+                if line in badges:
+                    continue
+                badges.append(line)
+
+    # Remove old badge in doc/badges
+    files = glob.glob(f"{doc_folder}/badges/*.svg")
+    for f in files:
+        os.remove(f)
+
+    # Add badges found in README.md
+    for badge in badges:
+        if not os.path.exists(f"temp_badges/{badge}"):
+            print(f"{badge} does not exist.")
+            continue
+        p = subprocess.Popen(
+            f"cp temp_badges/{badge} {doc_folder}/badges/{badge}",
+            stdout=subprocess.PIPE,
+            shell=True,
+        )
+        p.communicate()
+        if badge not in unique_badges_destination:
+            unique_badges_destination[badge] = f"{doc_folder}/badges/{badge}"
+        else:
+            # This is to ensure that the symlink is always to the same folder, regardless of OS.
+            tmp = [unique_badges_destination[badge], f"{doc_folder}/badges/{badge}"]
+            tmp.sort()
+            unique_badges_destination[badge] = tmp[0]
+
+# Remove old badge in docs/Apps/badges
+files = glob.glob(f"../docs/Apps/badges/*.svg")
+for f in files:
+    os.remove(f)
+
+# Make symlink to badges in /docs/Apps/badges
+for badge, destination in unique_badges_destination.items():
+    p = subprocess.Popen(
+        f"ln -s ../../{destination} ../docs/Apps/badges/{badge}",
+        stdout=subprocess.PIPE,
+        shell=True,
+    )
+    p.communicate()

@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+### generate tag badges
+### source: https://github.com/nikita-skobov/local-badges
+
+local-badges --config tag_badges.js

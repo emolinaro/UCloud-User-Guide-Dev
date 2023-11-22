@@ -1,0 +1,14 @@
+*.gz
+*.ipynb_checkpoints
+*.pyc
+*.sam
+*.tar
+*.zip
+.DS_Store
+.idea
+.Rhistory
+.vscode
+__pycache__
+_book
+node_modules
+tube

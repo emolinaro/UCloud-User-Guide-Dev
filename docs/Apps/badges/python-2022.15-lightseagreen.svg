@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="152" height="20">
+  <g shape-rendering="crispEdges">
+    <rect width="97" height="20" fill="#555"/>
+    <rect x="97" width="55" height="20" fill="#20b2aa"/>
+  </g>
+  <g fill="#fff" text-anchor="middle" font-family="DejaVu Sans,Verdana,Geneva,sans-serif" font-size="110">
+    
+    
+        <text x="495" y="140" transform="scale(0.1)" textLength="870" lengthAdjust="spacing">-vscode-python</text>
+    
+    <text x="1235" y="140" transform="scale(0.1)" textLength="450" lengthAdjust="spacing">2022.15</text>
+  </g>
+  
+  
+</svg>

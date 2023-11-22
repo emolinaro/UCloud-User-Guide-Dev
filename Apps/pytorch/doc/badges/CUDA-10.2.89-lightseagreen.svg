@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="94" height="20">
+  <g shape-rendering="crispEdges">
+    <rect width="41" height="20" fill="#555"/>
+    <rect x="41" width="53" height="20" fill="#20b2aa"/>
+  </g>
+  <g fill="#fff" text-anchor="middle" font-family="DejaVu Sans,Verdana,Geneva,sans-serif" font-size="110">
+    
+    
+        <text x="215" y="140" transform="scale(0.1)" textLength="310" lengthAdjust="spacing">CUDA</text>
+    
+    <text x="665" y="140" transform="scale(0.1)" textLength="430" lengthAdjust="spacing">10.2.89</text>
+  </g>
+  
+  
+</svg>

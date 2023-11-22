@@ -1,0 +1,18 @@
+# Software for Bioinformatics
+
+1. [bcl2fastq](../Apps/bcl2fastq.md)
+1. [BEDTools](../Apps/bedtools.md)
+1. [Cell Ranger](../Apps/cellranger.md)
+1. [Cell Ranger ATAC](../Apps/cellranger-atac.md)
+1. [ColabFold](../Apps/colabfold.md)
+1. [FastQC](../Apps/fastqc.md)
+1. [Genomics Sandbox](../Apps/genomics.md)
+1. [Kallisto](../Apps/kallisto.md)
+1. [nf-core Pipelines](../Apps/nf-core.md)
+1. [Nextflow](../Apps/nextflow.md)
+1. [Proteomics Sandbox](../Apps/proteomics.md)
+1. [Salmon](../Apps/salmon.md)
+1. [SAMtools](../Apps/samtools.md)
+1. [Space Ranger](../Apps/spaceranger.md)
+1. [STAR](../Apps/star.md)
+1. [Transcriptomics Sandbox](../Apps/transcriptomics.md)

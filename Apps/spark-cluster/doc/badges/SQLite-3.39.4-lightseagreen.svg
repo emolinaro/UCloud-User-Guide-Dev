@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="92" height="20">
+  <g shape-rendering="crispEdges">
+    <rect width="47" height="20" fill="#555"/>
+    <rect x="47" width="45" height="20" fill="#20b2aa"/>
+  </g>
+  <g fill="#fff" text-anchor="middle" font-family="DejaVu Sans,Verdana,Geneva,sans-serif" font-size="110">
+    
+    
+        <text x="245" y="140" transform="scale(0.1)" textLength="370" lengthAdjust="spacing">SQLite</text>
+    
+    <text x="685" y="140" transform="scale(0.1)" textLength="350" lengthAdjust="spacing">3.39.4</text>
+  </g>
+  
+  
+</svg>

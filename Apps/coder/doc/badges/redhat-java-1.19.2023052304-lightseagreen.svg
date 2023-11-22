@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="268" height="20">
+  <g shape-rendering="crispEdges">
+    <rect width="159" height="20" fill="#555"/>
+    <rect x="159" width="109" height="20" fill="#20b2aa"/>
+  </g>
+  <g fill="#fff" text-anchor="middle" font-family="DejaVu Sans,Verdana,Geneva,sans-serif" font-size="110">
+    
+    
+        <text x="805" y="140" transform="scale(0.1)" textLength="1490" lengthAdjust="spacing">Language Support for Java</text>
+    
+    <text x="2125" y="140" transform="scale(0.1)" textLength="990" lengthAdjust="spacing">1.19.2023052304</text>
+  </g>
+  
+  
+</svg>

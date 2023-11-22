@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="144" height="20">
+  <g shape-rendering="crispEdges">
+    <rect width="99" height="20" fill="#555"/>
+    <rect x="99" width="45" height="20" fill="#20b2aa"/>
+  </g>
+  <g fill="#fff" text-anchor="middle" font-family="DejaVu Sans,Verdana,Geneva,sans-serif" font-size="110">
+    
+    
+        <text x="505" y="140" transform="scale(0.1)" textLength="890" lengthAdjust="spacing">vscode-cpptools</text>
+    
+    <text x="1205" y="140" transform="scale(0.1)" textLength="350" lengthAdjust="spacing">1.15.3</text>
+  </g>
+  
+  
+</svg>
