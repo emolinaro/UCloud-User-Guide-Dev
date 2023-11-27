@@ -1,4 +1,5 @@
 appdirs==1.4.4
+beautifulsoup4==4.12.2
 docutils==0.18.1
 mistune==2.0.4
 myst==1.0.4
