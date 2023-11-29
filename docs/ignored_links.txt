@@ -1,3 +1,5 @@
-https://servicedesk.cloud.sdu.dk
-https://cloud.sdu.dk
+https://www.ansys.com
+https://doc.comsol.com
+https://dev.mysql.com
+
 

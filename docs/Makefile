@@ -21,6 +21,7 @@ I18NSPHINXOPTS  = $(PAPEROPT_$(PAPER)) $(SPHINXOPTS) .
 .PHONY: help
 help:
 	@echo "Please use \`make <target>' where <target> is one of"
+	@echo "  check       to check local and external links"
 	@echo "  html        to make standalone HTML files"
 	@echo "  html-noplot to make standalone HTML files without executing examples"
 	@echo "  dirhtml     to make HTML files named index.html in directories"
@@ -51,6 +52,13 @@ help:
 clean:
 	rm -rf $(BUILDDIR)/*
 	rm -rf _intro/*
+	rm -rf link_checker.log
+
+.PHONY: check
+check: html
+	python check_links.py --directory $(BUILDDIR)/html
+	@echo
+	@echo "Checked local and external links. Errors can be found in link_checker.log"
 
 .PHONY: html
 html:
